@@ -40,12 +40,34 @@
 	}
 }
 
-.container,
-.man,
-.carriage {
+.container {
 	--width: 9vw;
 	--bottom: 6vh;
 }
+
+.man {
+	--width: 9vw;
+	--bottom: 6vh;
+	animation: man 60s infinite;
+}
+@keyframes man {
+	0%   {left: 20%; top: 100%;}
+	60%  { opacity: 10%;}
+	80% { opacity: 2%;} 
+	100% { left: 100%; top: 0%;}
+  }
+.carriage{
+	--width: 9vw;
+	--bottom: 6vh;
+	animation: myfirst 20s infinite;
+}
+@keyframes myfirst {
+	0%   {left: 0%; top: 70%;}
+	60%  { opacity: 10%;}
+	80% { opacity: 2%;} 
+	100% { left: 100%; top: 70%;}
+  }
+
 .container {
 	position: absolute;
 	left: calc(var(--i) * 5%);
